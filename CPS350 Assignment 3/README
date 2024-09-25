@@ -1,0 +1,5 @@
+Test is the holds the main method.
+
+TicketQueue creates the Arraylist queue and holds the methods.
+
+Ticket holds the variables of the ticket object.

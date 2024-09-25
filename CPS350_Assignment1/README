@@ -1,0 +1,49 @@
+This assignment is about implementing a Linked List class called HeadTailList.
+
+Double item and Node next is declared in the private node class.  Head and Tail are declared as private instance variables in the node class. 
+Size is just the number of nodes in your Linked List.
+
+Node (double value) constructor initializes parameter as variable item and next as null then adds 1 to size so that everytime a Node object (new Node) is created the size increases.
+
+public HeadTailList constructor with no parameter initializes head, tails, and size.
+head is null
+tail is null
+size is int 0
+
+isEmpty is a method that checks if the list is empty and returns true if it is or false if not.
+
+length method just returns the integer length of the list by returning the size variable.
+
+
+insertFront(double value) method adds a new element to the front of the LinkedList
+- first creates a new Node
+- if new Node head is null then list is empty & new node should be both the head and tail of list
+- temp is assigned head
+- then the node after head will be assigned temp
+
+insertBack(double value) add a new element at the end of the list.
+- first creates a new Node
+- if new Node head is null then list is empty & new node should be both the head and tail of list
+- if head is not null then after tail add a new node
+- new node then becomes tail
+
+
+insertAtPosition(double value, int position)
+- inserts a new element at a specified position in the list.
+- if position is less than one or bigger than the size of the list prints out of bounds
+- if position is one meaning inserting at the head then old head becomes the node after the new node and new node becomes head
+- else meaning insert after head then temp is initialized to head
+- go through linked list until you reach desired position
+- new node is added at desired position
+
+removeEnd()deletes the last element of the list.
+- if list is empty throws new NoSuchElementException("Error: List is empty");
+- if there is only one element in list then removing the last element makes head and tail null since list is now empty
+- Else current node is head
+- While next node isnt tail so isnt the last node traverse list
+- current is current.next which is tail
+- tail becomes null removing the last element
+- current becomes tail
+- size decreases
+
+printList() to display all items in the list
