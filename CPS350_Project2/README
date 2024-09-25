@@ -1,0 +1,13 @@
+HashTable_SC
+contains the HashTable_SC class to implement the HashTable 
+using Separate Chaining for Resolving Collisions 
+
+HashTable_LP
+contains the HashTable_LP class to implement the HashTable  
+using Linear Probing for Resolving Collisions 
+
+Entry.java — contains the Entry class defining 
+the structure of a Entry into the HashTable
+
+TestTable.java— a test file containing the main method used 
+to test the functionalities of the HashTable_SC class & HashTable_LP class
